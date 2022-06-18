@@ -50,9 +50,6 @@ class AuthController extends Controller
 
     public function profile()
     {
-        return response()->json([
-            'status' => 'success',
-            'user' => Auth::user(),
-        ]);
+        return $this->authService->profile();
     }
 }
