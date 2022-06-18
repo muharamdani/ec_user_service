@@ -48,7 +48,6 @@ class AuthServices
     {
         return response()->json([
             'status' => 'success',
-            'user' => Auth::user(),
             'authorisation' => $this->respondWithToken(Auth::refresh()),
         ]);
     }
