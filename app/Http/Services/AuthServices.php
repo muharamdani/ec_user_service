@@ -14,7 +14,7 @@ class AuthServices
     protected $storeUri;
     public function __construct()
     {
-        $this->storeUri = env('STORE_SERVICE_URL');
+        $this->storeUri = env('STORE_SERVICE_URI');
     }
 
     public function login($request)
